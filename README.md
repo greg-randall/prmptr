@@ -4,7 +4,7 @@ Prmptr is a powerful command-line tool designed to execute complex, multi-step w
 
 ## Quick Start
 
-Let's run through a practical example. We'll take a raw news clipping and run it through a three-stage pipeline to create a social media post:
+Let's run through a practical example. We'll take a raw news clipping and run it through a three-stage pipeline to create a social media post. See the example folder for the input and output.
 
 1.  **Extraction:** Pull out a summary and key entities in parallel.
 2.  **Drafting:** Use the summary and keywords to create an initial draft for a Mastodon post.
