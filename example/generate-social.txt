@@ -1,0 +1,23 @@
+[[output]] =
+Make sure this post has the right tone for Mastodon and is under 500 characters. 
+Reply just with the updated post, no explanation!
+[[draft_post]]
+
+[[draft_post]] =
+You are a social media manager for a tech news account on Mastodon. 
+Based on the summary below, write a compelling post. 
+Convert the extracted keywords into 3-4 relevant hashtags.
+
+Summary:
+[[summary]]
+
+Keywords:
+[[keywords]]
+
+[[keywords]] =
+List the key people, organizations, and locations from the article below.
+Article: [[input text]]
+
+[[summary]] =
+Summarize the following article in one sentence.
+Article: [[input text]]

@@ -1,1 +1,5 @@
 *.txt
+!example/generate-social.txt
+!example/article.txt
+!example/2025-06-20_10-04-22_article.txt_promptchain.log
+!example/2025-06-20_10-04-22_article.txt_output.txt

@@ -1,0 +1,100 @@
+--- Step: [[summary]] ---
+
+PROMPT SENT TO LLM:
+---
+Summarize the following article in one sentence.
+Article: London, UK – The Ministry of Innovation has awarded a £50 million grant to QuantumLeap, a startup founded by Dr. Aris Thorne, to build the nation's first commercially viable quantum computer. The project, based in Manchester, aims to deliver a 1,000-qubit machine within three years, positioning the UK as a global leader in the field. "This investment secures our future in a transformative technology," said Minister Eva Rostova.
+---
+
+RESPONSE RECEIVED:
+---
+The UK Ministry of Innovation has granted £50 million to startup QuantumLeap, led by Dr. Aris Thorne, to develop the country's first commercially viable quantum computer, aiming for a 1,000-qubit machine in three years to establish UK leadership in the field.
+---
+
+
+====================
+
+--- Step: [[keywords]] ---
+
+PROMPT SENT TO LLM:
+---
+List the key people, organizations, and locations from the article below.
+Article: London, UK – The Ministry of Innovation has awarded a £50 million grant to QuantumLeap, a startup founded by Dr. Aris Thorne, to build the nation's first commercially viable quantum computer. The project, based in Manchester, aims to deliver a 1,000-qubit machine within three years, positioning the UK as a global leader in the field. "This investment secures our future in a transformative technology," said Minister Eva Rostova.
+---
+
+RESPONSE RECEIVED:
+---
+Key People:
+- Dr. Aris Thorne
+- Minister Eva Rostova
+
+Organizations:
+- Ministry of Innovation
+- QuantumLeap
+
+Locations:
+- London, UK
+- Manchester
+---
+
+
+====================
+
+--- Step: [[draft_post]] ---
+
+PROMPT SENT TO LLM:
+---
+You are a social media manager for a tech news account on Mastodon. 
+Based on the summary below, write a compelling post. 
+Convert the extracted keywords into 3-4 relevant hashtags.
+
+Summary:
+The UK Ministry of Innovation has granted £50 million to startup QuantumLeap, led by Dr. Aris Thorne, to develop the country's first commercially viable quantum computer, aiming for a 1,000-qubit machine in three years to establish UK leadership in the field.
+
+Keywords:
+Key People:
+- Dr. Aris Thorne
+- Minister Eva Rostova
+
+Organizations:
+- Ministry of Innovation
+- QuantumLeap
+
+Locations:
+- London, UK
+- Manchester
+---
+
+RESPONSE RECEIVED:
+---
+🚀 Exciting news in the tech world! The UK Ministry of Innovation has awarded £50 million to startup QuantumLeap, spearheaded by Dr. Aris Thorne, to develop the nation's first commercially viable quantum computer. The ambitious goal? A powerful 1,000-qubit machine within three years, solidifying the UK’s position as a leader in quantum technology. 
+
+Stay tuned as this innovative journey unfolds! 🇬🇧💡 
+
+#QuantumComputing #Innovation #TechNews #UKTech
+---
+
+
+====================
+
+--- Step: [[output]] ---
+
+PROMPT SENT TO LLM:
+---
+Make sure this post has the right tone for Mastodon and is under 500 characters. 
+Reply just with the updated post, no explanation!
+🚀 Exciting news in the tech world! The UK Ministry of Innovation has awarded £50 million to startup QuantumLeap, spearheaded by Dr. Aris Thorne, to develop the nation's first commercially viable quantum computer. The ambitious goal? A powerful 1,000-qubit machine within three years, solidifying the UK’s position as a leader in quantum technology. 
+
+Stay tuned as this innovative journey unfolds! 🇬🇧💡 
+
+#QuantumComputing #Innovation #TechNews #UKTech
+---
+
+RESPONSE RECEIVED:
+---
+🚀 Exciting news! The UK Ministry of Innovation has awarded £50 million to startup QuantumLeap, led by Dr. Aris Thorne, to create the nation's first commercially viable quantum computer. The goal? A powerful 1,000-qubit machine in three years, boosting the UK’s status in quantum tech. 
+
+Can't wait to see this journey unfold! 🇬🇧💡 
+
+#QuantumComputing #Innovation #TechNews #UKTech
+---
