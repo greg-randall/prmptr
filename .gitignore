@@ -1,3 +1,6 @@
+__pycache__/*
+*.log
+*.json
 *.txt
 !example/generate-social.txt
 !example/article.txt

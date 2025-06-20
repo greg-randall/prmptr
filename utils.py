@@ -1,6 +1,7 @@
 # utils.py
 import re
 from typing import Dict, List, Set
+from collections import defaultdict
 
 # A special node name that represents the initial user input.
 # This is treated as a starting point and not a prompt to be generated.
@@ -131,3 +132,54 @@ def resolve_execution_order(graph: Dict[str, List[str]]) -> List[str]:
     # Start the entire process from the 'output' node.
     visit('output')
     return order
+
+
+def find_parallel_groups(graph: Dict[str, List[str]]) -> List[List[str]]:
+    """
+    Identifies groups of prompts that can be executed in parallel.
+    
+    Prompts can run in parallel if they:
+    1. Have the same dependency depth (distance from input)
+    2. Don't depend on each other directly or indirectly
+    
+    Args:
+        graph: The dependency graph.
+        
+    Returns:
+        A list of groups, where each group contains prompts that can run in parallel.
+    """
+    if 'output' not in graph:
+        return []
+    
+    # Calculate depth for each node (distance from dependencies)
+    depths = {}
+    
+    def calculate_depth(node: str) -> int:
+        if node in depths:
+            return depths[node]
+        
+        if node == INPUT_NODE_NAME or node not in graph:
+            depths[node] = 0
+            return 0
+            
+        dependencies = graph.get(node, [])
+        if not dependencies:
+            depths[node] = 0
+            return 0
+            
+        max_dep_depth = max(calculate_depth(dep) for dep in dependencies)
+        depths[node] = max_dep_depth + 1
+        return depths[node]
+    
+    # Calculate depths for all nodes
+    for node in graph:
+        calculate_depth(node)
+    
+    # Group nodes by depth
+    depth_groups = defaultdict(list)
+    for node, depth in depths.items():
+        if node != INPUT_NODE_NAME and node in graph:
+            depth_groups[depth].append(node)
+    
+    # Return groups in order of increasing depth
+    return [depth_groups[depth] for depth in sorted(depth_groups.keys())]
