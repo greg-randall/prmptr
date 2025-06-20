@@ -56,6 +56,18 @@ python prmptr.py generate-social.txt article.txt
 
 That's it! The script will execute the chain on the article. It will extract the key entities, summarize the news, draft a compelling post about the UK's investment in quantum computing, and then give it a final polish for Mastodon before saving the result.
 
+**4. Review the output:**
+
+```
+🚀 Exciting news! The UK Ministry of Innovation has awarded £50 million to startup QuantumLeap,
+led by Dr. Aris Thorne, to create the nation's first commercially viable quantum computer.
+The goal? A powerful 1,000-qubit machine in three years, boosting the UK’s status in quantum tech. 
+
+Can't wait to see this journey unfold! 🇬🇧💡 
+
+#QuantumComputing #Innovation #TechNews #UKTech
+```
+
 ## Who is this for?
 
 This tool is for anyone who wants to leverage the power of LLMs for more than just simple, one-shot questions. It's perfect for:
