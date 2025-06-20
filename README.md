@@ -14,11 +14,14 @@ Let's run through a practical example. We'll take a raw news clipping and run it
 
 ```
 [[output]] =
-Make sure this post has the right tone for Mastodon and is under 500 characters. Reply just with the updated post, no explanation!
+Make sure this post has the right tone for Mastodon and is under 500 characters. 
+Reply just with the updated post, no explanation!
 [[draft_post]]
 
 [[draft_post]] =
-You are a social media manager for a tech news account on Mastodon. Based on the summary below, write a compelling post. Convert the extracted keywords into 3-4 relevant hashtags.
+You are a social media manager for a tech news account on Mastodon. 
+Based on the summary below, write a compelling post. 
+Convert the extracted keywords into 3-4 relevant hashtags.
 
 Summary:
 [[summary]]
@@ -38,7 +41,11 @@ Article: [[input text]]
 **2. Create an input file named `article.txt`:**
 
 ```
-London, UK – The Ministry of Innovation has awarded a £50 million grant to QuantumLeap, a startup founded by Dr. Aris Thorne, to build the nation's first commercially viable quantum computer. The project, based in Manchester, aims to deliver a 1,000-qubit machine within three years, positioning the UK as a global leader in the field. "This investment secures our future in a transformative technology," said Minister Eva Rostova.
+London, UK – The Ministry of Innovation has awarded a £50 million grant to QuantumLeap,
+a startup founded by Dr. Aris Thorne, to build the nation's first commercially viable quantum computer.
+The project, based in Manchester, aims to deliver a 1,000-qubit machine within three years,
+positioning the UK as a global leader in the field.
+"This investment secures our future in a transformative technology," said Minister Eva Rostova.
 ```
 
 **3. Run the command:**
