@@ -1,14 +1,12 @@
-# Prmptr: A Sophisticated Prompt Chaining Engine with Parallel Processing
+# Prmptr: A Human Readable Prompt Chaining Engine
 
-Prmptr is a powerful command-line tool designed to execute complex, multi-step workflows using Large Language Models (LLMs). It allows you to define a chain of interconnected prompts where the output of one step can be used as the input for another. This enables the creation of sophisticated pipelines for tasks like research analysis, structured drafting, and stylistic rewriting, all automated through a single command.
-
-**NEW:** Prmptr now features intelligent parallel processing that automatically executes independent prompts simultaneously, significantly reducing execution time for complex workflows.
+Prmptr is a powerful command-line tool designed to execute complex, multi-step workflows using Large Language Models (LLMs). It allows you to define a chain of interconnected prompts where the output of one step can be used as the input for another. This enables the creation of sophisticated pipelines for tasks like research analysis, structured drafting, and stylistic rewriting, all automated through a single command. Prmptr intelligent parallel processing that automatically executes independent prompts simultaneously, significantly reducing execution time for complex workflows.
 
 ## Quick Start
 
 Let's run through a practical example. We'll take a raw news clipping and run it through a three-stage pipeline to create a social media post. See the example folder for the input and output.
 
-1.  **Extraction:** Pull out a summary and key entities **in parallel** (automatically detected and executed simultaneously).
+1.  **Extraction:** Pull out a summary and key entities.
 2.  **Drafting:** Use the summary and keywords to create an initial draft for a Mastodon post.
 3.  **Refinement:** Pass the draft to a final "cleanup" prompt to ensure it's ready for publishing.
 
