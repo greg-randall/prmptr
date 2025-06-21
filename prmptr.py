@@ -243,10 +243,10 @@ def main():
     global logger
     
     parser = argparse.ArgumentParser(
-        description="Process a prompt chain file against an input text file."
+        description="Process a prompt chain file against an input file."
     )
     parser.add_argument("prompt_file", help="Path to the prompt chain file.")
-    parser.add_argument("input_file", help="Path to the input text file.")
+    parser.add_argument("input_file", help="Path to the input file.")
     parser.add_argument("--debug", action="store_true", help="Enable debug output.")
     parser.add_argument("--log-level", choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"], 
                        default="INFO", help="Set the logging level (default: INFO)")

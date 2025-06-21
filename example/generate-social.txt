@@ -16,8 +16,8 @@ Keywords:
 
 [[keywords]] =
 List the key people, organizations, and locations from the article below.
-Article: [[input text]]
+Article: [[input]]
 
 [[summary]] =
 Summarize the following article in one sentence.
-Article: [[input text]]
+Article: [[input]]

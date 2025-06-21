@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # A special node name that represents the initial user input.
 # This is treated as a starting point and not a prompt to be generated.
-INPUT_NODE_NAME = "input text"
+INPUT_NODE_NAME = "input"
 
 
 def parse_prompt_file(file_content: str) -> Dict[str, str]:
@@ -43,7 +43,13 @@ def parse_prompt_file(file_content: str) -> Dict[str, str]:
         content_end = matches[i + 1].start() if i + 1 < len(matches) else len(file_content)
 
         content = file_content[content_start:content_end].strip()
-        prompt_definitions[name] = content
+        
+        # Filter out comment lines (lines starting with #)
+        lines = content.split('\n')
+        filtered_lines = [line for line in lines if not line.lstrip().startswith('#')]
+        filtered_content = '\n'.join(filtered_lines).strip()
+        
+        prompt_definitions[name] = filtered_content
 
     return prompt_definitions
 
